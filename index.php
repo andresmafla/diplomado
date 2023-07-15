@@ -33,7 +33,7 @@
                                         <tbody>
                                                 <?php
                                                 $sql = "select * from usuarios";
-                                                $datos = mysqli_query($bd, $sql);
+                                                $datos = $bd->query($sql);
                                                 while ($row = $datos->fetch_assoc()) {
                                                         echo "<tr>";
                                                         echo "<td>" . $row['id'] . "</td>";
